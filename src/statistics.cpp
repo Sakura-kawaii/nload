@@ -122,7 +122,7 @@ float Statistics::getUnitFactor(dataUnit unit, unsigned long long value)
             return factor * 1024 * 1024;
         case gigaBit:
         case gigaByte:
-            return factor * 1024 * 1024 * 1024;
+            return factor * 1024 * 1024 * 1024 * 10;
         default: // should never be executed
             return factor;
     }
